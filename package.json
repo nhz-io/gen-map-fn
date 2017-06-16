@@ -1,0 +1,42 @@
+{
+  "name": "gen-map-fn",
+  "version": "0.0.0",
+  "description": "Map function over iterator capturing the iterator return value",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "curried.js"
+  ],
+  "scripts": {
+    "start": "ava --watch",
+    "test": "nyc ava --verbose",
+    "lint": "eslint --fix .",
+    "prepush": "npm run lint && npm run test",
+    "prepublish": "npm run lint && npm run test",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "nhz.io",
+    "iterator",
+    "generator",
+    "function",
+    "map"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhz-io/gen-map-fn.git"
+  },
+  "author": "Ishi Ruy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nhz-io/gen-map-fn/issues"
+  },
+  "homepage": "https://github.com/nhz-io/gen-map-fn#readme",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "coveralls": "^2.13.1",
+    "eslint": "^4.0.0",
+    "husky": "^0.13.4",
+    "nyc": "^11.0.2"
+  }
+}
